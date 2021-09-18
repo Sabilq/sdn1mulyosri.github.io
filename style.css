@@ -134,7 +134,7 @@ section {
 }
 
 #homepage {
-    background-image: url('hero.jpg');
+    background-image: url("hero.jpg");
 }
 
 .homepage h1 {
