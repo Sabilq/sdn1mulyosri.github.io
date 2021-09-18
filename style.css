@@ -134,7 +134,7 @@ section {
 }
 
 #homepage {
-    background-color: skyblue;
+    background-image: url('hero.jpg');
 }
 
 .homepage h1 {
