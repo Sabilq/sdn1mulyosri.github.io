@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global */
+:root {
+    --bg-color: #e7ecef;
+    --bl1-color: #6096ba;
+    --bl2-color: #274c77;
+    --bl3-color: #023047;
+    font-size: 62.5%;
+}
+
+/* Main */
+body {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    width: 90%;
+    border: 2px solid var(--bl1-color);
+    border-radius: 4px;
+}
+
+
+/* Nav */
+.nav .wrapper {
+    background: var(--bl1-color);
+    border-bottom: 3px solid var(--bl2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4em .5em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Nav-Logo */
+.nav .logo h1 a {
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--bl2-color);
+    text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    transition: 200ms;
+}
+
+.nav .logo:active h1 a {
+    color: var(--bg-color);
+}
+.nav .logo h1 a {
+    font-size: 2.8rem;
+}
+.nav .wrapper {
+    padding-right: 3em;
+    padding-left: 3em;
+}
+.nav-menu-wide nav ul {
+    display: inline-block;
+    margin-right: 1em;
+}
+.nav-menu-wide nav li {
+    display: inline-block;
+    margin-right: 1em;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    transition: 200ms;
+}
+
+section {
+    width: 100%;
+    min-height: 440px;
+    border-bottom: 3px solid #aba9a9;
+}
+
+#homepage {
+    background-color: skyblue;
+}
+
+.homepage h1 {
+    font-size: 26px;
+    text-align: center;
+    line-height: 440px;
+    font-weight: bold;
+}
+
+section#content {
+    min-height: 540px;
+}
+
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content .column-container {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.column-container .col-child {
+    width: 100%;
+    background-color: skyblue;
+    border: 3px solid slategray;
+    text-align: center;
+}
+
+.column-container .col-child h4 {
+    margin-bottom: 10px;
+}
+
+.column-container .col-child p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: teal;
+}
+
+.footer h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
