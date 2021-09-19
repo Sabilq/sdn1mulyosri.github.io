@@ -135,6 +135,7 @@ section {
 
 #homepage {
     background-image: url("hero.jpg");
+    background-repeat: no-repeat;
 }
 
 .homepage h1 {
